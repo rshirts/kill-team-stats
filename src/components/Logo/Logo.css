@@ -1,0 +1,27 @@
+  
+  /* Logo from:
+  https://preview.freelogodesign.org/?lang=EN&name=&logo=e5b47628-d015-4da3-9063-978418937c0c */
+
+.Logo {
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px rgb(0,0,0, 0.3);
+}
+
+.Logo img {
+  height: 100%;
+}
+
+.LogoText {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  /* This padding is because the image has extra white space so it makes it look even */
+  padding: 0 5px 0 0;
+  height: 100%;
+  color: var(--red);
+}

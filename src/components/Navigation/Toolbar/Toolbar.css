@@ -1,0 +1,19 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  padding: 0 15px;
+  background-color: var(--grey);
+  color: rgba(255, 0, 0, 0.7);
+  font-weight: bolder;
+  border-bottom: 3px solid white;
+}
+
+.Logo {
+  height: 80%
+}

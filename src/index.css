@@ -1,5 +1,28 @@
+  /* https://preview.freelogodesign.org/?lang=EN&name=&logo=e5b47628-d015-4da3-9063-978418937c0c */
+
+:root {
+  --red: #9a0606;
+  --grey: #999999;
+  --bone: #e4c79f;
+}
+
+/* Adding global formating to the page */
+html {
+  /* This allows us to use border and padding without changing the size of the elements. */
+  box-sizing: border-box;
+}
+
+/* Adding global style to the body of the document. */
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
+
+/* Inheriting from our html document is better than just applying it globaly */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
