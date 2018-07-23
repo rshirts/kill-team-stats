@@ -1,0 +1,12 @@
+.teamLogo {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-area: teamLogo;
+  height: inherit;
+  padding: 5px;
+}
+
+.teamLogo img {
+  height: inherit;
+}

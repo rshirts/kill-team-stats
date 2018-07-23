@@ -3,7 +3,7 @@ import './TeamName.css'
 
 const teamName = (props) => {
   return (
-    <div styleName="TeamName">
+    <div styleName="teamName">
       {props.teamName}
     </div>
   )

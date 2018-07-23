@@ -1,19 +1,18 @@
 .toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  max-width: 1024px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  flex-wrap: wrap;
   width: 100vw;
-  padding: 0 15px;
+  padding:  5px 15px;
   background-color: var(--grey);
   color: rgba(255, 0, 0, 0.7);
   font-weight: bolder;
   border-bottom: 3px solid white;
+  border-radius: 0 0 5px 5px;
 }
 
-.Logo {
-  height: 80%
+.logo {
+  height: 40px;
 }

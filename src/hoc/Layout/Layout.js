@@ -6,18 +6,14 @@ import TeamBuilder from '../../containers/TeamBuilder/TeamBuilder'
 export default class Layout extends Component {
   render() {
     return (
-        <div styleName="Layout">
-          {/* The div surrounding the toolbar is there to provide proper spacing for the css grid of the layout, even though the toolbar has a fixed position */}
-          <div>
+        <div styleName="mainContainer">
+        <div styleName="layout">
             <Toolbar />
-          </div>
-          {/* <main styleName="Content"> */}
-          <main>
             <TeamBuilder />
-          </main>
-          <div styleName="Footer">
+          <div styleName="footer">
               footer
           </div>
+        </div>
         </div>
     )
   }

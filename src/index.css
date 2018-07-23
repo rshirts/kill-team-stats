@@ -19,6 +19,8 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+
+
 /* Inheriting from our html document is better than just applying it globaly */
 *,
 *:before,

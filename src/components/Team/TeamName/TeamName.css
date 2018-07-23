@@ -1,7 +1,7 @@
-.TeamName {
+.teamName {
   display: grid;
   align-content: center;
   justify-content: center;
-  grid-area: TeamName;
+  grid-area: teamName;
   color: var(--red);
 }
