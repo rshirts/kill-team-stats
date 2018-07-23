@@ -1,0 +1,17 @@
+.teamStat {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.statName {
+  border-bottom: 2px solid black;
+  justify-content: center;
+}
+
+.statValue{
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+}

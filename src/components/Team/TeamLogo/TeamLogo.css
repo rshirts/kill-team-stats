@@ -1,12 +1,14 @@
 .teamLogo {
   display: grid;
   align-content: center;
-  justify-content: center;
+  justify-items: center;
   grid-area: teamLogo;
   height: inherit;
   padding: 5px;
 }
 
 .teamLogo img {
+  max-height: 95%;
   height: inherit;
+  cursor: pointer;
 }

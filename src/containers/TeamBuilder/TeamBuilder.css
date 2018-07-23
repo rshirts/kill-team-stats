@@ -44,7 +44,7 @@
 @media (max-width: 499px) {
   .team {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 100px 1fr;
+    grid-template-rows: 100px 100px minmax(100px, auto) 1fr;
     grid-template-areas:
     "teamName"
     "teamLogo"

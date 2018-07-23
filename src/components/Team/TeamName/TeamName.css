@@ -4,4 +4,5 @@
   justify-content: center;
   grid-area: teamName;
   color: var(--red);
+  cursor: pointer;
 }

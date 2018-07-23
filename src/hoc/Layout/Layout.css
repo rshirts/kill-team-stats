@@ -1,13 +1,11 @@
 .mainContainer {
   display: grid;
   justify-content: center;
-  width: 100vw;
 }
 
 .layout {
   display: grid;
   grid-gap:  20px;
-  max-width: 1024px;
   /* This allows grids gtr 1fr to fill in all extra space */
   height: 100vh;
   grid-template-rows: auto 1fr auto;
