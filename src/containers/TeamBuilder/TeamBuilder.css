@@ -6,7 +6,7 @@
     "teamName     teamLogo      teamStats"
     "players  players   players";
   grid-gap: 20px;
-  align-content: start;
+  /* align-content: start; */
 }
 
 .team>* {
