@@ -1,8 +1,6 @@
 .teamStats {
   display: grid;
-  padding: 15px;
   grid-area: teamStats;
-  justify-items: center;
   color: var(--red);
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 }

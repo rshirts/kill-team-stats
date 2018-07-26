@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
-import './TeamBuilder.css'
-import TeamName from '../../components/Team/TeamName/TeamName'
-import TeamLogo from '../../components/Team/TeamLogo/TeamLogo'
-import TeamStats from '../../components/Team/TeamStats/TeamStats'
+import React, { Component } from "react";
+import "./TeamBuilder.css";
+import TeamName from "../../components/Team/TeamName/TeamName";
+import TeamLogo from "../../components/Team/TeamLogo/TeamLogo";
+import TeamStats from "../../components/Team/TeamStats/TeamStats";
 
 export class TeamBuilder extends Component {
   state = {
-    teamName: 'Ragnars Raiders',
-    teamLogoName: 'ragnar-raider-logo.png',
+    teamName: {
+      name: "Ragnars Raiders"
+    },
+    teamLogoName: "ragnar-raider-logo.png",
     teamStats: {
       wins: 3,
       losses: 0,
@@ -16,25 +18,43 @@ export class TeamBuilder extends Component {
       int: 20,
       health: 25
     }
-  }
+  };
 
   teamHasLogo = () => {
-    if(this.state.teamLogoName) {
-      return this.state.teamLogoName
+    if (this.state.teamLogoName) {
+      return this.state.teamLogoName;
     }
-    return 'addLogoLogo.png';
-  }
-  
+    return "addLogoLogo.png";
+  };
+
+  changedTeamNameHandler = event => {
+    const teamNameToChange = { ...this.state.teamName };
+    teamNameToChange.name = event.target.value;
+    this.setState({ teamName: teamNameToChange });
+  };
+
+  changedTeamStatHandler = (event, teamStat) => {
+    const teamStatsToChange = { ...this.state.teamStats };
+    teamStatsToChange[teamStat] = event.target.value;
+    this.setState({ teamStats: teamStatsToChange });
+  };
+
   render() {
     return (
       <main styleName="team">
-          <TeamName teamName={this.state.teamName} />
-          <TeamLogo teamLogoName={this.teamHasLogo()} />
-          <TeamStats teamStats={this.state.teamStats} />
-          <div styleName="players">Players</div>
+        <TeamName
+          content={this.state.teamName.name}
+          changed={this.changedTeamNameHandler}
+        />
+        <TeamLogo teamLogoName={this.teamHasLogo()} />
+        <TeamStats
+          teamStats={this.state.teamStats}
+          changed={this.changedTeamStatHandler}
+        />
+        <div styleName="players">Players</div>
       </main>
-    )
+    );
   }
 }
 
-export default TeamBuilder
+export default TeamBuilder;

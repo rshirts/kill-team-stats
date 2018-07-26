@@ -1,12 +1,13 @@
 .team {
   display: grid;
+  width: 100%;
+  align-content: center;
   grid-template-rows: 100px 1fr;
   grid-template-columns: 1fr 1fr 3fr;
   grid-template-areas:
     "teamName     teamLogo      teamStats"
     "players  players   players";
-  grid-gap: 20px;
-  /* align-content: start; */
+  grid-gap: 10px;
 }
 
 .team>* {
@@ -32,6 +33,7 @@
 
 @media (max-width: 750px) {
   .team {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px 1fr;
     grid-template-areas:
@@ -43,6 +45,7 @@
 
 @media (max-width: 499px) {
   .team {
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100px minmax(100px, auto) 1fr;
     grid-template-areas:
