@@ -3,5 +3,5 @@
 }
 
 input {
-  width: 100%;
+  width: minmax(100%, auto);
 }

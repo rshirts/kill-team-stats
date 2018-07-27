@@ -18,7 +18,7 @@ class EditableText extends Component {
 
   handleOnKeyPress = event => {
     if (event.key === "Enter") {
-      this.toggleEditEnabledHandler(event);
+      this.toggleEditEnabledHandler();
     }
   };
 

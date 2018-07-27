@@ -6,9 +6,7 @@ import TeamStats from "../../components/Team/TeamStats/TeamStats";
 
 export class TeamBuilder extends Component {
   state = {
-    teamName: {
-      name: "Ragnars Raiders"
-    },
+    teamName: "Ragnars Raiders",
     teamLogoName: "ragnar-raider-logo.png",
     // teamLogoName: "",
     teamStats: {
@@ -28,13 +26,13 @@ export class TeamBuilder extends Component {
     return "addLogo.png";
   };
 
-  changedTeamNameHandler = event => {
-    const teamNameToChange = { ...this.state.teamName };
-    teamNameToChange.name = event.target.value;
-    this.setState({ teamName: teamNameToChange });
+  teamNameChangedHandler = event => {
+    let newName = { ...this.state.teamName };
+    newName = event.target.value;
+    this.setState({ teamName: newName });
   };
 
-  changedTeamStatHandler = (event, teamStat) => {
+  teamStatChangedHandler = (event, teamStat) => {
     const teamStatsToChange = { ...this.state.teamStats };
     teamStatsToChange[teamStat] = event.target.value;
     this.setState({ teamStats: teamStatsToChange });
@@ -44,13 +42,13 @@ export class TeamBuilder extends Component {
     return (
       <main styleName="team">
         <TeamName
-          content={this.state.teamName.name}
-          changed={this.changedTeamNameHandler}
+          content={this.state.teamName}
+          changed={this.teamNameChangedHandler}
         />
         <TeamLogo teamLogoName={this.teamHasLogo()} />
         <TeamStats
           teamStats={this.state.teamStats}
-          changed={this.changedTeamStatHandler}
+          changed={this.teamStatChangedHandler}
         />
         <div styleName="players">Players</div>
       </main>
