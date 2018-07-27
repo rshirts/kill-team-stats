@@ -6,29 +6,13 @@
   grid-template-columns: 1fr 1fr 3fr;
   grid-template-areas:
     "teamName teamLogo teamStats"
-    "players players players";
+    "teamMembers teamMembers teamMembers";
   grid-gap: 10px;
 }
 
 .team > * {
   background-color: var(--grey);
   border-radius: 5px;
-}
-
-.teamName {
-  grid-area: teamName;
-}
-
-.teamLogo {
-  grid-area: teamLogo;
-}
-
-.teamStats {
-  grid-area: teamStats;
-}
-
-.players {
-  grid-area: players;
 }
 
 @media (max-width: 750px) {
@@ -39,7 +23,7 @@
     grid-template-areas:
       "teamName teamLogo"
       "teamStats teamStats"
-      "players players";
+      "teamMembers teamMembers";
   }
 }
 
@@ -52,6 +36,6 @@
       "teamName"
       "teamLogo"
       "teamStats"
-      "players";
+      "teamMembers";
   }
 }

@@ -3,6 +3,7 @@ import "./TeamBuilder.css";
 import TeamName from "../../components/Team/TeamName/TeamName";
 import TeamLogo from "../../components/Team/TeamLogo/TeamLogo";
 import TeamStats from "../../components/Team/TeamStats/TeamStats";
+import TeamMembers from '../../components/Team/TeamMembers/TeamMembers'
 
 export class TeamBuilder extends Component {
   state = {
@@ -16,7 +17,45 @@ export class TeamBuilder extends Component {
       str: 15,
       int: 20,
       health: 25
-    }
+    },
+    teamMembers: [
+      {
+        memberName: "first",
+        pictureName: "first",
+        type: "IG",
+        role: "infintry",
+        specialty: "sniper",
+        kills: 1,
+        deaths: 2
+      },
+      {
+        memberName: "second",
+        pictureName: "first",
+        type: "IG",
+        role: "infintry",
+        specialty: "sniper",
+        kills: 1,
+        deaths: 2
+      },
+      {
+        memberName: "third",
+        pictureName: "first",
+        type: "IG",
+        role: "infintry",
+        specialty: "sniper",
+        kills: 1,
+        deaths: 2
+      },
+      {
+        memberName: "fourth",
+        pictureName: "first",
+        type: "IG",
+        role: "infintry",
+        specialty: "sniper",
+        kills: 1,
+        deaths: 2
+      }
+    ]
   };
 
   teamHasLogo = () => {
@@ -50,7 +89,7 @@ export class TeamBuilder extends Component {
           teamStats={this.state.teamStats}
           changed={this.teamStatChangedHandler}
         />
-        <div styleName="players">Players</div>
+        <TeamMembers teamMembers={this.state.teamMembers} />
       </main>
     );
   }
