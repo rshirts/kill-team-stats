@@ -1,0 +1,10 @@
+.areaName {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-bottom: 2px solid var(--transbone);
+  border-radius: 3px;
+  padding: 5px;
+  color: var(--red);
+}

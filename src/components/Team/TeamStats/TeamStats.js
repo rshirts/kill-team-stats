@@ -2,6 +2,7 @@ import React from "react";
 import "./TeamStats.css";
 import TeamStat from "./TeamStat/TeamStat";
 import PropTypes from "prop-types";
+import AreaName from '../../UI/AreaName/AreaName'
 
 const teamStats = props => {
   let transformedStats = Object.keys(props.teamStats).map((statKey, i) => {
@@ -15,7 +16,12 @@ const teamStats = props => {
     );
   });
 
-  return <div styleName="teamStats">{transformedStats}</div>;
+  return (
+    <div styleName="teamStats">
+      <AreaName name="Team Stats" />
+      {transformedStats}
+    </div>
+  )
 };
 
 teamStats.propTypes = {

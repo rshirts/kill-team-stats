@@ -1,4 +1,6 @@
 .teamStats {
+  padding-top: 15px;
+  position: relative;
   display: grid;
   grid-area: teamStats;
   color: var(--red);

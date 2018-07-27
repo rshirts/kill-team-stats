@@ -1,4 +1,5 @@
 .teamName {
+  position: relative;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -7,4 +8,8 @@
   grid-area: teamName;
   color: var(--red);
   padding: 15px;
+}
+
+.teamName div {
+  padding-top: 10px;
 }

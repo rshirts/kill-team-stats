@@ -1,4 +1,6 @@
 .teamLogo {
+  position: relative;
+
   display: grid;
   align-content: center;
   justify-items: center;
@@ -8,6 +10,8 @@
 }
 
 .teamLogo img {
+  padding-top: 15px;
+  padding-left: 20px;
   max-height: 95%;
   height: inherit;
   cursor: pointer;
