@@ -1,13 +1,19 @@
-import React from 'react'
-import './TeamName.css'
-import EditableText from '../../UI/EditableText/EditableText';
+import React from "react";
+import "./TeamName.css";
+import EditableText from "../../UI/EditableText/EditableText";
+import PropTypes from "prop-types";
 
-const teamName = (props) => {
+const teamName = props => {
   return (
-      <div styleName="teamName">
-        <EditableText changed={props.changed} content={props.content} />
-      </div>
-    )
-}
+    <div styleName="teamName">
+      <EditableText changed={props.changed} content={props.content} />
+    </div>
+  );
+};
 
-export default teamName
+teamName.propTypes = {
+  changed: PropTypes.func,
+  content: PropTypes.string
+};
+
+export default teamName;

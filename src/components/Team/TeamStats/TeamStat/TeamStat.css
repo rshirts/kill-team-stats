@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.statValue{
+.statValue {
   display: grid;
   justify-content: center;
   cursor: pointer;

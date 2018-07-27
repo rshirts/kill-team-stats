@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from 'react'
-import './EditableText.css'
-import Tooltip from '../../UI/Tooltip/Tooltip'
+import React, { Component, Fragment } from "react";
+import "./EditableText.css";
+import Tooltip from "../../UI/Tooltip/Tooltip";
+import PropTypes from "prop-types";
 
 // Provides and input field to change the value of a text field.
 // props:
@@ -9,46 +10,51 @@ import Tooltip from '../../UI/Tooltip/Tooltip'
 class EditableText extends Component {
   state = {
     editEnabled: false
-  }
+  };
 
   toggleEditEnabledHandler = () => {
-    this.setState({editEnabled: !this.state.editEnabled})
-  }
+    this.setState({ editEnabled: !this.state.editEnabled });
+  };
 
-  handleOnKeyPress = (event) => {
-     if (event.key === 'Enter') {
-      this.toggleEditEnabledHandler(event)
-     }
-  }
-  
+  handleOnKeyPress = event => {
+    if (event.key === "Enter") {
+      this.toggleEditEnabledHandler(event);
+    }
+  };
+
   render() {
-    const textEdit =
+    const textEdit = (
       <div styleName="textFieldText">
         <input
           onChange={this.props.changed}
           autoFocus
           onKeyPress={this.handleOnKeyPress}
           onBlur={this.toggleEditEnabledHandler}
-          value={this.props.content} type="text"
+          value={this.props.content}
+          type="text"
         />
       </div>
+    );
 
-    const textValue =
+    const textValue = (
       <Tooltip message="Click to edit">
-        <div styleName="textFieldText"
+        <div
+          styleName="textFieldText"
           onClick={this.toggleEditEnabledHandler}
           onBlur={this.toggleEditEnabledHandler}
         >
           {this.props.content}
         </div>
       </Tooltip>
+    );
 
-    return (
-      <Fragment>
-        {this.state.editEnabled ? textEdit: textValue}
-      </Fragment>
-    )
+    return <Fragment>{this.state.editEnabled ? textEdit : textValue}</Fragment>;
   }
 }
 
-export default EditableText
+EditableText.propTypes = {
+  changed: PropTypes.func,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+};
+
+export default EditableText;

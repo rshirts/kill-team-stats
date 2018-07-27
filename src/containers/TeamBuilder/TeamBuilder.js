@@ -10,6 +10,7 @@ export class TeamBuilder extends Component {
       name: "Ragnars Raiders"
     },
     teamLogoName: "ragnar-raider-logo.png",
+    // teamLogoName: "",
     teamStats: {
       wins: 3,
       losses: 0,
@@ -24,7 +25,7 @@ export class TeamBuilder extends Component {
     if (this.state.teamLogoName) {
       return this.state.teamLogoName;
     }
-    return "addLogoLogo.png";
+    return "addLogo.png";
   };
 
   changedTeamNameHandler = event => {

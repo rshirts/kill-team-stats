@@ -1,10 +1,10 @@
-  /* https://preview.freelogodesign.org/?lang=EN&name=&logo=e5b47628-d015-4da3-9063-978418937c0c */
+/* https://preview.freelogodesign.org/?lang=EN&name=&logo=e5b47628-d015-4da3-9063-978418937c0c */
 
 :root {
   --red: #9a0606;
   --grey: #999999;
   --bone: #e4c79f;
-  --transbone: rgba(227,218,201,0.6);
+  --transbone: rgba(227, 218, 201, 0.6);
 }
 
 /* Adding global formating to the page */
@@ -17,10 +17,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
-
-
 
 /* Inheriting from our html document is better than just applying it globaly */
 *,
@@ -28,4 +26,3 @@ body {
 *:after {
   box-sizing: inherit;
 }
-

@@ -6,7 +6,7 @@
 
 .layout {
   display: grid;
-  grid-gap:  10px;
+  grid-gap: 10px;
   /* This allows grids gtr 1fr to fill in all extra space */
   height: 100vh;
   grid-template-rows: auto 1fr auto;
@@ -19,6 +19,3 @@
   align-items: center;
   background-color: var(--grey);
 }
-
-
-
