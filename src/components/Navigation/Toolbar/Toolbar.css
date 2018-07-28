@@ -3,11 +3,10 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding:  5px 15px;
+  padding: 5px 15px;
   background-color: var(--grey);
   color: rgba(255, 0, 0, 0.7);
   font-weight: bolder;
-  border-radius: 0 0 5px 5px;
 }
 
 .logo {

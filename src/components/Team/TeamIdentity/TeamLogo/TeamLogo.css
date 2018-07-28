@@ -1,0 +1,11 @@
+.teamLogo {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.teamLogo img {
+  height: inherit;
+  cursor: pointer;
+}

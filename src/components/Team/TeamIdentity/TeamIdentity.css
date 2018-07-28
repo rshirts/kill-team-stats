@@ -1,0 +1,15 @@
+.teamIdentity {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  grid-area: teamIdentity;
+  height: auto;
+}
+
+.teamLogo {
+  height: 100px;
+  display: flex;
+}

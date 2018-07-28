@@ -4,5 +4,6 @@
   display: grid;
   grid-area: teamStats;
   color: var(--red);
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  border-radius: 5px 0 0 5px;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 }

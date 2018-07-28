@@ -37,7 +37,7 @@
   border-top: 5px solid var(--transbone);
 }
 
-/* alight from right tooltip */
+/* align from right tooltip  potentially add scss to use an if then to adjust the transform: translateX*/
 
 .tooltipFlipped {
   position: relative;

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./TeamBuilder.css";
-import TeamName from "../../components/Team/TeamName/TeamName";
-import TeamLogo from "../../components/Team/TeamLogo/TeamLogo";
+import TeamIdentity from "../../components/Team/TeamIdentity/TeamIdentity";
 import TeamStats from "../../components/Team/TeamStats/TeamStats";
 import TeamMembers from '../../components/Team/TeamMembers/TeamMembers'
 
@@ -80,11 +79,11 @@ export class TeamBuilder extends Component {
   render() {
     return (
       <main styleName="team">
-        <TeamName
+        <TeamIdentity
           content={this.state.teamName}
           changed={this.teamNameChangedHandler}
+          teamLogoName={this.teamHasLogo()}
         />
-        <TeamLogo teamLogoName={this.teamHasLogo()} />
         <TeamStats
           teamStats={this.state.teamStats}
           changed={this.teamStatChangedHandler}

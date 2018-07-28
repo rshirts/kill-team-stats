@@ -3,40 +3,38 @@
   width: 100%;
   align-content: center;
   grid-template-rows: 125px 1fr;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
-    "teamName teamLogo teamStats"
-    "teamMembers teamMembers teamMembers";
+    "teamIdentity teamStats"
+    "teamMembers teamMembers";
   grid-gap: 10px;
-  
 }
 
 .team > * {
   background-color: var(--grey);
-  border-radius: 5px;
 }
 
 @media (max-width: 750px) {
   .team {
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 125px 125px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(125px, auto) minmax(125px, auto) 1fr;
     grid-template-areas:
-      "teamName teamLogo"
-      "teamStats teamStats"
-      "teamMembers teamMembers";
+      "teamIdentity"
+      "teamStats"
+      "teamMembers";
   }
 }
-
+/*
 @media (max-width: 499px) {
   .team {
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 125px 125px minmax(125px, auto) 1fr;
+    grid-template-rows: 125px 125px  1fr;
     grid-template-areas:
       "teamName"
       "teamLogo"
       "teamStats"
       "teamMembers";
   }
-}
+} */
