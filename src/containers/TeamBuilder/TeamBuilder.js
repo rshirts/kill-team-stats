@@ -76,6 +76,8 @@ export class TeamBuilder extends Component {
     this.setState({ teamStats: teamStatsToChange });
   };
 
+
+  
   render() {
     return (
       <main styleName="team">
