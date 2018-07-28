@@ -1,11 +1,11 @@
-.teamLogo {
+.editableImage {
   display: grid;
   align-items: center;
   justify-content: space-between;
   height: inherit;
 }
 
-.teamLogo img {
+.editableImage img {
   height: inherit;
   cursor: pointer;
 }

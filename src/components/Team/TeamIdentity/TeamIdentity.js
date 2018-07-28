@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './TeamIdentity.css'
 import TeamName from './TeamName/TeamName'
-import TeamLogo from './TeamLogo/TeamLogo'
 import AreaName from '../../UI/AreaName/AreaName'
+import EditableImage from '../../UI/EditableImage/EditableImage'
 
 const teamIdentity = (props) => {
   return (
@@ -11,7 +11,7 @@ const teamIdentity = (props) => {
       <AreaName name="Team Info" />
       <TeamName changed={props.changed} content={props.content} />
       <div styleName="teamLogo">
-        <TeamLogo teamLogoName={props.teamLogoName} />
+        <EditableImage teamLogoName={props.teamLogoName} />
       </div>
 
     </div>
