@@ -1,0 +1,13 @@
+.memberMenu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+  margin: 0 5px;
+}
+
+.memberName {
+  color: var(--red);
+  font-weight: bolder;
+}

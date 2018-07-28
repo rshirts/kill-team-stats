@@ -1,4 +1,7 @@
 .teamMembers {
   display: grid;
+  grid-gap: 10px;
   grid-area: teamMembers;
+  padding: 10px;
+  background-color: var(--bone);
 }

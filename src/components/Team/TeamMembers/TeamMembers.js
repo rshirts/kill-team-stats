@@ -1,21 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './TeamMembers.css'
+import React from "react";
+import PropTypes from "prop-types";
+import "./TeamMembers.css";
+import TeamMember from "./TeamMember/TeamMember";
 
-const teamMembers = (props) => {
-  const transformedTeamMembers = () => {
-
-  }
+const teamMembers = props => {
+  let transformedTeamMembers = props.teamMembers.map((member, i) => {
+    return <TeamMember key={member + i} member={member} />
+  });
 
   return (
     <div styleName="teamMembers">
-      here are the members.
+      {transformedTeamMembers}
     </div>
-  )
-}
+  );
+};
 
 teamMembers.propTypes = {
+  teamMembers: PropTypes.array
+};
 
-}
-
-export default teamMembers
+export default teamMembers;
