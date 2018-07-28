@@ -4,4 +4,5 @@
   grid-area: teamMembers;
   padding: 10px;
   background-color: var(--bone);
+  color: var(--red);
 }

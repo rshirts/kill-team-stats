@@ -9,6 +9,7 @@
 .tooltip:hover .message {
   display: block;
   white-space: nowrap;
+  font-weight: bolder;
   font-size: 0.75rem;
   padding: 5px;
   text-align: center;
@@ -17,6 +18,8 @@
   border-radius: 5px;
   position: absolute;
   top: -30px;
+  transform: translateX(-25%);
+
 }
 
 .arrow-down {
@@ -27,7 +30,42 @@
   display: block;
   position: absolute;
   top: -6px;
-  left: 3px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--transbone);
+}
+
+/* alight from right tooltip */
+
+.tooltipFlipped {
+  position: relative;
+}
+
+.messageFlipped {
+  display: none;
+}
+
+.tooltipFlipped:hover .messageFlipped {
+  display: block;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  padding: 5px;
+  text-align: center;
+  background-color: var(--transbone);
+  color: black;
+  border-radius: 5px;
+  position: absolute;
+  top: -30px;
+  transform: translateX(-75%);
+}
+
+.tooltipFlipped:hover .arrow-down {
+  display: block;
+  position: absolute;
+  font-weight: bolder;
+  top: -6px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;

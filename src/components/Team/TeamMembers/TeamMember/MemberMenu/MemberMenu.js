@@ -1,17 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AreaName from "../../../../UI/AreaName/AreaName";
 import "./MemberMenu.css";
+import EditableText from '../../../../UI/EditableText/EditableText'
 
 const componentName = props => {
   return (
     <div styleName="memberMenu">
-      <div styleName="memberName">{props.memberName}</div>
-      <div> X </div>
+      <EditableText content={props.memberName} />
+      <div styleName="addRemove">
+        <div>
+          +
+        </div>
+        <div>
+          X
+        </div>
+      </div>
     </div>
   );
 };
 
-componentName.propTypes = {};
+componentName.propTypes = {
+  memberName: PropTypes.string
+};
 
 export default componentName;

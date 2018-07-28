@@ -5,8 +5,8 @@
 
 .memberContents {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  justify-content: center;
-  align-content: center;
-  height: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: repeat(auto-fill, minmax(125, auto));
 }
