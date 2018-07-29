@@ -1,18 +1,21 @@
 .teamStat {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 15px;
+	padding: 0 8px 0 0;
 }
 
 .statName {
-  border-bottom: 2px solid black;
-  justify-content: center;
+	border-bottom: 2px solid black;
+	justify-content: center;
 }
 
 .statValue {
-  display: grid;
-  justify-content: center;
-  cursor: pointer;
+	display: grid;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.statContainer {
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	grid-template-columns: 1fr 18px;
 }

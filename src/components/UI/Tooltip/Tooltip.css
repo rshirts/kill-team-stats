@@ -1,74 +1,77 @@
 .tooltip {
-  position: relative;
+	position: relative;
+	display: grid;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .message {
-  display: none;
+	display: none;
 }
 
 .tooltip:hover .message {
-  display: block;
-  white-space: nowrap;
-  font-weight: bolder;
-  font-size: 0.75rem;
-  padding: 5px;
-  text-align: center;
-  background-color: var(--transbone);
-  color: black;
-  border-radius: 5px;
-  position: absolute;
-  top: -30px;
-  transform: translateX(-25%);
-
+	display: block;
+	white-space: nowrap;
+	font-weight: bolder;
+	font-size: 0.75rem;
+	padding: 5px;
+	text-align: center;
+	background-color: var(--transbone);
+	color: black;
+	border-radius: 5px;
+	position: absolute;
+	top: -30px;
+	transform: translateX(-25%);
 }
 
 .arrow-down {
-  display: none;
+	display: none;
 }
 
 .tooltip:hover .arrow-down {
-  display: block;
-  position: absolute;
-  top: -6px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid var(--transbone);
+	display: block;
+	position: absolute;
+	top: -6px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid var(--transbone);
 }
 
 /* align from right tooltip  potentially add scss to use an if then to adjust the transform: translateX*/
 
 .tooltipFlipped {
-  position: relative;
+	position: relative;
 }
 
 .messageFlipped {
-  display: none;
+	display: none;
 }
 
 .tooltipFlipped:hover .messageFlipped {
-  display: block;
-  white-space: nowrap;
-  font-size: 0.75rem;
-  padding: 5px;
-  text-align: center;
-  background-color: var(--transbone);
-  color: black;
-  border-radius: 5px;
-  position: absolute;
-  top: -30px;
-  transform: translateX(-75%);
+	display: block;
+	white-space: nowrap;
+	font-size: 0.75rem;
+	padding: 5px;
+	text-align: center;
+	background-color: var(--transbone);
+	color: black;
+	border-radius: 5px;
+	position: absolute;
+	top: -30px;
+	transform: translateX(-75%);
 }
 
 .tooltipFlipped:hover .arrow-down {
-  display: block;
-  position: absolute;
-  font-weight: bolder;
-  top: -6px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid var(--transbone);
+	display: block;
+	position: absolute;
+	font-weight: bolder;
+	top: -6px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid var(--transbone);
 }

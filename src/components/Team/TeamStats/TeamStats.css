@@ -1,9 +1,10 @@
 .teamStats {
-  padding-top: 15px;
-  position: relative;
-  display: grid;
-  grid-area: teamStats;
-  color: var(--red);
-  border-radius: 5px 0 0 5px;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	position: relative;
+	display: grid;
+	grid-area: teamStats;
+	color: var(--red);
+	border-radius: 5px 0 0 5px;
+	grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	align-content: center;
+	justify-content: space-between;
 }
