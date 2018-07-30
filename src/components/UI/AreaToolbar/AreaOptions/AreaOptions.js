@@ -12,6 +12,9 @@ const areaOptions = () => {
   );
 };
 
-areaOptions.propTypes = {};
+areaOptions.propTypes = {
+  flip: PropTypes.bool,
+  message: PropTypes.string
+};
 
 export default areaOptions;

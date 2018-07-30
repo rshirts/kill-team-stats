@@ -23,6 +23,7 @@ const teamMember = props => {
       <AreaToolbar memberName={props.member.memberName} />
       <div styleName="memberContents">
         <img
+          alt="Member"
           src={`https://robohash.org/${
             props.member.memberName
           }.png ?size=100x100`}

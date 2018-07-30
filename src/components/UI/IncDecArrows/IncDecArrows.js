@@ -6,12 +6,8 @@ import Tooltip from '../../UI/Tooltip/Tooltip';
 const incDecArrows = () => {
 	return (
 		<div styleName="incDecArrows">
-			<Tooltip message="Increase Value">
-				<div styleName="arrow up" />
-			</Tooltip>
-			<Tooltip message="Decrease Value">
-				<div styleName="arrow down" />
-			</Tooltip>
+			<div styleName="arrow up" />
+			<div styleName="arrow down" />
 		</div>
 	);
 };

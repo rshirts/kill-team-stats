@@ -1,16 +1,21 @@
-.teamIdentity {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+.teamIdentityContainer {
+  position: relative;
+  display: grid;
+	grid-template-rows: auto 1fr;
 	grid-area: teamIdentity;
 	height: inherit;
 	border-radius: 0 5px 5px 0;
 }
 
-.teamLogo {
-	height: 75px;
+.teamIdentityItems {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.teamLogo {
+  height: 75px;
+  transform: translateY(-15%);
 }

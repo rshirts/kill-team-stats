@@ -12,10 +12,10 @@ export class TeamBuilder extends Component {
 		teamStats: {
 			wins: 3,
 			losses: 0,
-			con: 18,
-			str: 15,
-			int: 20,
-			health: 25
+			Intellignece: 18,
+			Material: 15,
+			Moral: 20,
+			Territory: 25
 		},
 		teamMembers: [
 			{

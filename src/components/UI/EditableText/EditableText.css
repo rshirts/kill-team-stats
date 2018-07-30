@@ -1,7 +1,21 @@
 .textFieldText {
-  cursor: pointer;
+	cursor: pointer;
+	display: grid;
+	justify-content: center;
+}
+
+input[type='number'] {
+  width: 3em;
+}
+
+input[type='text'] {
+  width: 80%;
 }
 
 input {
-  width: minmax(100%, auto);
+	text-align: center;
+	display: inline-block;
+	margin: auto;
 }
+
+

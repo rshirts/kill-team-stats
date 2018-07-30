@@ -2,7 +2,6 @@ import React from 'react';
 import './TeamStat.css';
 import EditableText from '../../../UI/EditableText/EditableText';
 import PropTypes from 'prop-types';
-import IncDecArrows from '../../../UI/IncDecArrows/IncDecArrows';
 
 const teamStat = (props) => {
 	return (
@@ -10,10 +9,10 @@ const teamStat = (props) => {
 			<div styleName="teamStat">
 				<div styleName="statName">{props.statKey}</div>
 				<div styleName="statValue">
-					<EditableText changed={props.changed} content={props.content} />
+					<EditableText changed={props.changed} content={props.content} inputType='number' />
 				</div>
 			</div>
-			<IncDecArrows />
+			{/* <IncDecArrows /> */}
 		</div>
 	);
 };

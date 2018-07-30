@@ -1,10 +1,25 @@
-.teamStats {
+/* .teamStats {
 	position: relative;
 	display: grid;
 	grid-area: teamStats;
 	color: var(--red);
 	border-radius: 5px 0 0 5px;
-	grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+} */
+.teamStatsContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+	position: relative;
+	grid-area: teamStats;
+	color: var(--red);
+	border-radius: 5px 0 0 5px;
+}
+
+.teamStatsItems {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min-content, 60px));
+	justify-content: space-evenly;
+	justify-items: center;
 	align-content: center;
-	justify-content: space-between;
 }

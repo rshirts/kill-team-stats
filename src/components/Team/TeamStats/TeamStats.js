@@ -17,9 +17,11 @@ const teamStats = props => {
   });
 
   return (
-    <div styleName="teamStats">
+    <div styleName="teamStatsContainer">
       <AreaName name="Team Stats" />
+      <div styleName="teamStatsItems">
       {transformedStats}
+      </div>
     </div>
   )
 };

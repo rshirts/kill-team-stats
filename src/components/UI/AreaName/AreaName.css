@@ -1,10 +1,26 @@
+/* .areaName {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-bottom: 2px solid var(--transbone);
+	border-radius: 0 0 3px 0;
+	padding-top: 3px;
+	padding-left: 3px;
+	color: var(--red);
+} */
+.areaNameContainer {
+  display: grid;
+  justify-content: start;
+}
 .areaName {
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-bottom: 2px solid var(--transbone);
-  border-radius: 3px;
-  padding: 5px;
-  color: var(--red);
+	border-bottom: 2px solid var(--transbone);
+	border-radius: 0 0 3px 3px;
+	padding-top: 3px;
+	padding-left: 3px;
+	color: var(--red);
+	width: auto;
+	position: relative;
+	font-weight: bolder;
+	margin: auto;
 }
